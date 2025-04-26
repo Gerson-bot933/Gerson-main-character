@@ -1,0 +1,48 @@
+[gd_scene load_steps=6 format=3 uid="uid://wtih4foqwih7"]
+
+[ext_resource type="Texture2D" uid="uid://bipd0i4na2oln" path="res://7.png" id="1_ig7tw"]
+[ext_resource type="Texture2D" uid="uid://b3ojhnfrvygmu" path="res://Tile_51.png" id="2_h2yge"]
+[ext_resource type="PackedScene" uid="uid://defqp21enjt1i" path="res://Scenes/main_character.tscn" id="3_1bvp3"]
+
+[sub_resource type="TileSetAtlasSource" id="TileSetAtlasSource_1bvp3"]
+texture = ExtResource("2_h2yge")
+0:0/0 = 0
+0:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:0/0 = 0
+1:0/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+0:1/0 = 0
+0:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+1:1/0 = 0
+1:1/0/physics_layer_0/polygon_0/points = PackedVector2Array(-8, -8, 8, -8, 8, 8, -8, 8)
+
+[sub_resource type="TileSet" id="TileSet_7mycd"]
+physics_layer_0/collision_layer = 1
+sources/6 = SubResource("TileSetAtlasSource_1bvp3")
+
+[node name="Node" type="Node"]
+
+[node name="TextureRect" type="TextureRect" parent="."]
+texture_filter = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -612.0
+offset_top = -298.0
+offset_right = 540.0
+offset_bottom = 350.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_vertical = 2
+texture = ExtResource("1_ig7tw")
+expand_mode = 1
+stretch_mode = 1
+
+[node name="TileMap" type="TileMap" parent="."]
+rotation = -0.00403246
+tile_set = SubResource("TileSet_7mycd")
+format = 2
+layer_0/tile_data = PackedInt32Array(2162756, 65537, 0, 2228292, 65537, 0, 2293828, 65537, 1, 2359364, 65537, 0, 2424900, 65537, 1, 2424828, 65540, 0, 2555905, 6, 0, 2555906, 6, 0, 2555907, 6, 0, 2555908, 6, 0, 2555909, 6, 0, 2555910, 6, 0, 2555911, 6, 0, 2555912, 6, 0, 2555913, 6, 0, 2555914, 6, 0, 2555915, 6, 0, 2555916, 6, 0, 2555917, 6, 0, 2555918, 6, 0, 2555919, 6, 0, 2555920, 6, 0, 2555921, 6, 0, 2555922, 6, 0, 2555923, 6, 0, 2555924, 6, 0, 2555925, 6, 0, 2555926, 6, 0, 2555927, 6, 0, 2555928, 6, 0, 2555929, 6, 0, 2555930, 6, 0, 2555931, 6, 0, 2555932, 6, 0, 2555933, 6, 0, 2555934, 6, 0, 2555935, 6, 0, 2555936, 6, 0, 2555937, 6, 0, 2555938, 6, 0, 2555939, 6, 0, 2555940, 6, 0, 2555941, 6, 0, 2555942, 6, 0, 2555943, 6, 0, 2555944, 6, 0, 2555945, 6, 0, 2555946, 6, 0, 2555947, 6, 0, 2555948, 6, 0, 2555949, 6, 0, 2555950, 6, 0, 2555951, 6, 0, 2555952, 6, 0, 2555953, 6, 0, 2555954, 6, 0, 2555955, 6, 0, 2555956, 6, 0, 2555957, 6, 0, 2555958, 6, 0, 2555959, 6, 0, 2555960, 6, 0, 2555961, 6, 0, 2555962, 6, 0, 2555963, 6, 0, 2555964, 6, 0, 2555965, 6, 0, 2555966, 6, 0, 2555967, 6, 0, 2555968, 6, 0, 2555969, 6, 0, 2555970, 6, 0, 2555971, 6, 0, 2555972, 6, 0, 2555973, 6, 0, 2555974, 6, 0, 2555975, 6, 0, 2293795, 65542, 0, 2293796, 65542, 0, 2293798, 65542, 0, 2293797, 65542, 0, 2293799, 65542, 0, 2293800, 65542, 0, 2293801, 65542, 0, 2293802, 65542, 0, 2031667, 65542, 0, 2031668, 65542, 0, 2031669, 65542, 0, 2031670, 65542, 0, 2097206, 65542, 0, 2097207, 65542, 0, 2097208, 65542, 0, 2162744, 65542, 0, 2162745, 65542, 0, 2162746, 65542, 0, 2228282, 65542, 0, 1966096, 65542, 0, 1966095, 65542, 0, 1966094, 65542, 0, 1966093, 65542, 0, 1966092, 65542, 0, 2031627, 65542, 0, 2031626, 65542, 0, 2097162, 65542, 0, 2162698, 65542, 0, 2162697, 65542, 0, 2293784, 65542, 0, 2293785, 65542, 0, 2293786, 65542, 0, 2293787, 65542, 0, 2293788, 65542, 0, 2293789, 65542, 0, 2228283, 6, 0, 2228284, 6, 0, 2228285, 6, 0)
+
+[node name="CharacterBody2D" parent="." instance=ExtResource("3_1bvp3")]
+position = Vector2(317, 403)
+rotation = -0.0238148
